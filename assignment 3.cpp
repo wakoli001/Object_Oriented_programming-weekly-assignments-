@@ -1,5 +1,12 @@
-#include <iostream>
 
+/*IAN WANGILA
+CT101/G/26668/25
+COMPUTER SCIENCE 2.1
+
+A program to display the grading system for Prime group of schools using
+nested if...else loops*/
+
+#include <iostream>
 using namespace std;
 
 int main(){
