@@ -1,0 +1,102 @@
+#include <iostream>
+#include <string.h>
+
+using namespace std;
+
+class Book{
+    public:
+    string tittle;
+    string author;
+    int pages;
+    
+    //create a constructor function for the object Book
+    
+    Book(string atittle, string aauthor, int apages){
+       atittle = atittle;
+       author = aauthor;
+       pages = apages;
+        
+    }
+    
+    //create a default constructor function 
+  
+    
+};
+
+class Car{
+    public:
+    string name;
+    string developer;
+    string country;
+    string fuel;
+    int buyers;
+    
+    //create also a constructor function for the Car object
+    
+    Car(string aname, string adeveloper, string acountry, string afuel, int abuyers){
+        name = name;
+        developer = adeveloper;
+        country = acountry;
+        fuel = afuel;
+        buyers = abuyers;
+        
+    }
+    
+    //create a default constructor function
+  
+};
+
+int main(){
+    
+    //now create an object for each of the class created
+    
+   
+    Book Book1("The Ghost Of Gharbatula", "Harley Arthur", 1250);
+  
+    
+    //write a code bloc to print out the object defined
+    
+    cout <<"\n==== Book One =======\n";
+    cout << "Tittle : "<<Book1.tittle<<endl;
+    cout << "Author : "<<Book1.author<<endl;
+    cout << "Number Of Pages : "<<Book1.pages<<endl;
+    cout << "\n================================================\n";
+    
+    //repeat for the second object
+       Book Book2("The Merchant of Venice","Stephen Gerald", 1450);
+    
+    cout <<"==== Book Two =======\n";
+    cout << "Tittle : "<<Book2.tittle<<endl;
+    cout << "Author : "<<Book2.author<<endl;
+    cout << "Number Of Pages : "<<Book2.pages<<endl;
+    cout << "\n================================================\n";
+    
+    //Now initialise the objects in the second class
+      //create an object for the class Car
+    
+  
+    Car Car1("Mercedes Benz","Scania","Germany","Petrol", 16238);
+  
+    
+    cout << "\n======== Car One ===================\n";
+    cout << "Brand : "<<Car1.name<<endl;
+    cout << "Manufacturer : "<<Car1.developer<<endl;
+    cout << "Country Of Origin : "<<Car1.country<<endl;
+    cout << "Type Of Fuel : "<<Car1.fuel<<endl;
+    cout << "Number Of buyers : "<<Car1.buyers<<endl;
+    cout << "\n===============================================\n";
+    
+    //now do the same for the second object
+      Car Car2("Mazda Demio","Toyota Motors"," Japan","Diesel", 473609);
+  
+    cout << "\n======== Car Two ===================\n";
+    cout << "Brand : "<<Car2.name<<endl;
+    cout << "Manufacturer : "<<Car2.developer<<endl;
+    cout << "Country Of Origin : "<<Car2.country<<endl;
+    cout << "Type Of Fuel : "<<Car2.fuel<<endl;
+    cout << "Number Of buyers : "<<Car2.buyers<<endl;
+    cout << "\n===============================================\n";
+    
+    return 0;
+    
+}
