@@ -24,7 +24,7 @@ int main(){
 
     Ball obj;
 
-    cout<<"-------------  ENCAPSULATING THA AREA   ----------\n";
+    cout<<"-------------  ENCAPSULATING THE AREA   ----------\n";
 
    obj.setArea(2.8);
 
