@@ -1,0 +1,12 @@
+#include <iostream>
+#include <iomanip>
+using namespace std;
+int main() {
+    double revenue[7], total = 0;
+    for (int day = 0; day < 7; ++day) {
+        cout << "Revenue for day " << day + 1 << ": "; cin >> revenue[day];
+        total += revenue[day];
+    }
+    cout << fixed << setprecision(2) << "Weekly total: " << total
+         << "\nDaily average: " << total / 7 << '\n';
+}
