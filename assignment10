@@ -1,0 +1,15 @@
+#include <iostream>
+#include <string>
+using namespace std;
+int main() {
+    const string correctUser = "student", correctPassword = "oop123";
+    string user, password;
+    do {
+        cout << "Username: "; cin >> user;
+        cout << "Password: "; cin >> password;
+        if (user == correctUser && password == correctPassword) {
+            cout << "Access Granted\n"; break;
+        }
+        cout << "Incorrect credentials, try again\n";
+    } while (true);
+}
