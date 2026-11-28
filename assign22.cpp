@@ -1,3 +1,9 @@
+/* NAME :  WANGILA IAN WAKOLI
+   rEG No. : CT101/G/26668/24
+   COURSE  : COMPUTER SCIENCE
+   YEAR    : 2.1
+    */
+
 #include <iostream>
 #include <string>
 #include <iomanip>
