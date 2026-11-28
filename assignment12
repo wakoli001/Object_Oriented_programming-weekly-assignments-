@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+int main() {
+    int occupancy[5][10];
+    for (int floor = 0; floor < 5; ++floor) {
+        int occupied = 0;
+        cout << "Enter 10 values for floor " << floor + 1 << " (1 occupied, 0 vacant): ";
+        for (int room = 0; room < 10; ++room) {
+            cin >> occupancy[floor][room];
+            if (occupancy[floor][room] != 0 && occupancy[floor][room] != 1) {
+                cout << "Use only 0 or 1. Re-enter this floor: ";
+                --floor; occupied = -1; break;
+            }
+            occupied += occupancy[floor][room];
+        }
+        if (occupied >= 0) cout << "Floor " << floor + 1 << ": " << occupied
+                               << " occupied, " << 10 - occupied << " vacant\n";
+    }
+}
